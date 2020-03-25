@@ -420,6 +420,7 @@ class Tokenizer(AbstractObject):
         if pre_len == 0:
             return None, substring, pos
         end_pos = pos + pre_len - 1
+        print(pre_len)
         # Create the TokenMeta object that can be later used to retrieve the token
         # from the text
         token_meta = TokenMeta(
